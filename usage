@@ -1,0 +1,3 @@
+Save the script as system_health_monitor.sh.
+Make it executable: chmod +x system_health_monitor.sh.
+Run the script: ./system_health_monitor.sh.
