@@ -1,0 +1,8 @@
+ALERT: CPU usage is above threshold! Current usage: 85.0%
+ALERT: Memory usage is above threshold! Current usage: 82.3%
+ALERT: Disk usage is above threshold! Current usage: 90%
+Current running processes:
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  22568  2764 ?        Ss   Jan01   0:02 /sbin/init
+...
+System health check completed at Wed May 29 14:32:45 UTC 2024
