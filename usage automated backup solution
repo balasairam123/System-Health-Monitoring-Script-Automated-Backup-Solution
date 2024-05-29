@@ -1,0 +1,5 @@
+Usage:
+
+Save the script as automated_backup.sh.
+Make it executable: chmod +x automated_backup.sh.
+Run the script: ./automated_backup.sh.
