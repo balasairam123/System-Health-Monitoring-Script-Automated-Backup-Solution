@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Define variables
+SOURCE_DIR="/path/to/source_directory"
+REMOTE_USER="remote_user"
+REMOTE_HOST="remote_host"
+REMOTE_DIR="/path/to/remote_directory"
+LOG_FILE="/var/log/backup.log"
+
+# Perform backup using rsync
+rsync -avz --delete $SOURCE_DIR $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR
+
+# Check if rsync was successful
+if [ $? -eq 0 ]; then
+    echo "Backup succeeded at $(date)" >> $LOG_FILE
+else
+    echo "Backup failed at $(date)" >> $LOG_FILE
+fi
